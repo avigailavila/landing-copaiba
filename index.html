@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De la Selva al Laboratorio: El Aceite de Copaiba entre la Medicina Tradicional Indígena y la Ciencia Moderna</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ==================== BARRA DE HERRAMIENTAS ==================== -->
+<div class="toolbar" role="toolbar" aria-label="Herramientas del documento">
+    <button class="toolbar-btn icon-only" id="themeToggle" title="Cambiar tema (claro/oscuro)" aria-label="Cambiar tema">
+        <svg id="themeIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+        </svg>
+    </button>
+    <button class="toolbar-btn primary" id="printBtn" title="Imprimir documento">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H9v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+        </svg>
+        <span class="btn-label">Imprimir</span>
+    </button>
+    <button class="toolbar-btn secondary" id="pdfBtn" title="Exportar a PDF">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+        </svg>
+        <span class="btn-label">PDF</span>
+    </button>
+</div>
+
+<!-- ==================== BOTÓN VOLVER ARRIBA ==================== -->
+<button class="back-to-top" id="backToTop" title="Volver arriba" aria-label="Volver arriba">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+</button>
+
+<div class="container" id="documentContent">
+
+    <!-- ==================== CABECERA ==================== -->
+    <header>
+        <div class="header-top">
+            <div class="header-text">
+                <span class="badge">Investigación Científica</span>
+                <h1>De la Selva al Laboratorio: El Aceite de Copaiba entre la Medicina Tradicional Indígena y la Ciencia Moderna</h1>
+                <p class="subtitle">Fundamentos químicos, mecanismos de acción biológica, saber ancestral y su integración en la industria cosmética y farmacéutica contemporánea.</p>
+            </div>
+
+            <!-- LOGO EMPRENDIMIENTO AVIGAIL AVILA -->
+            <div class="brand-logo" aria-label="Emprendimiento Avigail Avila">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logotipo Emprendimiento Avigail Avila">
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#e9b872;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#c98a4b;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Espiral geométrica estilizada -->
+                    <g fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round">
+                        <!-- Triángulo exterior -->
+                        <polygon points="100,15 185,175 15,175" fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+                        <!-- Espiral interior -->
+                        <path d="M 100 40 L 165 160 L 35 160 Z" />
+                        <path d="M 100 60 L 148 148 L 52 148 Z" />
+                        <path d="M 100 80 L 132 138 L 68 138 Z" />
+                        <path d="M 100 98 L 118 128 L 82 128 Z" />
+                        <path d="M 100 112 L 108 122 L 92 122 Z" />
+                        <!-- Líneas radiales desde el vértice -->
+                        <line x1="100" y1="15" x2="100" y2="175" opacity="0.6"/>
+                        <line x1="100" y1="15" x2="15" y2="175" opacity="0.6"/>
+                        <line x1="100" y1="15" x2="185" y2="175" opacity="0.6"/>
+                    </g>
+                    <!-- Punto central -->
+                    <circle cx="100" cy="118" r="3" fill="#e9b872"/>
+                </svg>
+                <div class="brand-text">
+                    Emprendimiento<br>Avigail Avila
+                    <span>Investigación & IA Aplicada</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="authors">
+            <div class="author-card">
+                <div class="name">Equipo de Investigación</div>
+                <div class="role">Autoría principal</div>
+            </div>
+            <div class="author-card">
+                <div class="name">Ing. Avigail Avila B.</div>
+                <div class="role">Investigador-Promotor-Divulgador Científico · Analista de IA Aplicada</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== ÍNDICE NAVEGABLE ==================== -->
+    <nav class="toc" aria-label="Índice de contenidos">
+        <h2>Índice de Contenidos</h2>
+        <div class="toc-grid">
+            <a href="#seccion-1" class="toc-item">
+                <span class="toc-num">1</span>
+                Fundamentos Químicos y Mecanismos de Acción
+            </a>
+            <a href="#seccion-2" class="toc-item">
+                <span class="toc-num">2</span>
+                Saber Ancestral y Práctica Tradicional Indígena
+            </a>
+            <a href="#seccion-3" class="toc-item">
+                <span class="toc-num">3</span>
+                Integración en la Industria Cosmética Moderna
+            </a>
+            <a href="#seccion-4" class="toc-item">
+                <span class="toc-num">4</span>
+                Potencial Terapéutico y Evidencia Científica
+            </a>
+            <a href="#seccion-5" class="toc-item">
+                <span class="toc-num">5</span>
+                Desafíos de Sostenibilidad y Ética
+            </a>
+            <a href="#referencias" class="toc-item">
+                <span class="toc-num">6</span>
+                Referencias Bibliográficas
+            </a>
+        </div>
+    </nav>
+
+    <!-- ==================== CONTENIDO ==================== -->
+    <main>
+
+        <!-- ===== SECCIÓN 1 ===== -->
+        <section id="seccion-1">
+            <h2><span class="section-icon">🧪</span>Fundamentos Químicos y Mecanismos de Acción Biológica</h2>
+
+            <p>El aceite-resina de copaiba, obtenido de árboles del género <em>Copaifera</em>, se distingue por una compleja composición química que subyace a su amplio espectro de aplicaciones tanto tradicionales como modernas. Su estructura dual, compuesta por una fracción volátil o aceite esencial y una fracción no volátil o resinosa, es fundamental para entender sus propiedades multifuncionales. La fracción volátil está dominada por sesquiterpenos, constituyendo más del 90% del aceite esencial, mientras que la fracción resinosa contiene principalmente diterpenos carboxílicos. Esta composición específica, junto con su interacción con receptores biológicos clave, explica por qué este producto natural ha sido valorado durante siglos y sigue siendo un ingrediente de interés en la cosmética y la farmacología.</p>
+
+            <p>La caracterización química del aceite-resina revela una notable variabilidad dependiendo de la especie botánica, la ubicación geográfica y las condiciones ambientales. Por ejemplo, análisis de <em>Copaifera reticulata</em> han mostrado concentraciones de β-caryophyllene que oscilan entre un 38.58% y un 68%, lo que demuestra una significativa heterogeneidad en su composición. En contraste, otros estudios sobre <em>Copaifera</em> spp. reportan una composición dominada por β-bisaboleno (23.6%), β-caryophyllene (21.7%) y α-bergamoteno (20.5%). Esta variabilidad es un factor crítico que debe ser considerado al evaluar la eficacia y estandarizar productos derivados de esta resina. La tabla siguiente resume algunos de los componentes químicos identificados en diferentes estudios, ilustrando esta diversidad.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Compuesto</th>
+                            <th>Especie / Origen</th>
+                            <th>Concentración (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>β-Caryophyllene</td><td><em>C. reticulata</em> (Pará, Amapá)</td><td>38.58 – 68</td></tr>
+                        <tr><td>β-Caryophyllene</td><td><em>C. langsdorffii</em> (Cearaensis)</td><td>21.7</td></tr>
+                        <tr><td>α-Humuleno</td><td><em>C. reticulata</em></td><td>No especificada</td></tr>
+                        <tr><td>α-Copaeno</td><td><em>C. reticulata</em></td><td>7.0 – 18.9</td></tr>
+                        <tr><td>α-Bergamoteno</td><td><em>C. langsdorffii</em> (Cearaensis)</td><td>20.5</td></tr>
+                        <tr><td>β-Bisaboleno</td><td><em>C. langsdorffii</em> (Cearaensis)</td><td>23.6</td></tr>
+                        <tr><td>Copalic acid methyl ester</td><td><em>C. langsdorffii</em> (Cearaensis)</td><td>No especificada</td></tr>
+                        <tr><td>Ácido copálico</td><td><em>C. reticulata</em></td><td>Principal diterpeno</td></tr>
+                        <tr><td>Ácido kaurenóico</td><td><em>C. reticulata</em></td><td>Principal diterpeno</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>El compuesto más relevante y estudiado del aceite-resina de copaiba es el β-caryophylleno, un sesquiterpeno que actúa como un fitocannabinoide único. A diferencia de otros cannabinoides como el THC, el β-caryophylleno no produce efectos psicoactivos porque interactúa selectivamente con los receptores CB2 del sistema endocannabinoide (SEC) del cuerpo humano. El SEC es un sistema de señalización crucial involucrado en la regulación de procesos fisiológicos como la inflamación, el dolor y la homeostasis inmunológica. Al unirse a los receptores CB2, que están predominantemente presentes en los tejidos del sistema inmunitario, el β-caryophylleno puede modular la respuesta inflamatoria, reduciendo la producción de mediadores pro-inflamatorios y calmando la actividad de las células inmunitarias. Este mecanismo molecular proporciona una explicación científica robusta para las potentes propiedades antiinflamatorias y analgésicas observadas tanto en la medicina tradicional como en estudios preclínicos contemporáneos. La capacidad de interactuar con el ECS sin efectos psicoactivos lo convierte en un objetivo farmacológico particularmente atractivo para el desarrollo de terapias seguras y eficaces.</p>
+
+            <p>Además del β-caryophylleno, otros sesquiterpenos presentes en el aceite-resina contribuyen a su perfil biológico. El α-humuleno, por ejemplo, también ha demostrado poseer propiedades antiinflamatorias y analgésicas en estudios in vivo con ratas, sugiriendo un efecto sinérgico entre diferentes componentes del aceite. Otros sesquiterpenos hidrocarburos y oxigenados como el α-copaeno, α-bergamoteno y δ-cadineno están presentes en cantidades significativas y participan en el conjunto de actividades biológicas del aceite. Por otro lado, la fracción resinosa, rica en diterpenos como el ácido copálico, el ácido kaurenóico y otros relacionados, también exhibe una variedad de actividades biológicas. Estudios han investigado el potencial quimioterapéutico del ácido copálico y otros compuestos aislados del aceite-resina, demostrando actividad antifúngica y otras propiedades farmacológicas. La investigación sobre la interacción entre estas dos fracciones (volátil y resinosa) es aún incipiente, pero se postula que pueden actuar de manera sinérgica para producir los efectos terapéuticos globales observados con el aceite-resina completo. En resumen, la dualidad química del aceite-resina de copaiba, combinada con el mecanismo de acción específico del β-caryophylleno sobre el sistema endocannabinoide, proporciona una base sólida para su uso tradicional y justifica su continua investigación y aplicación en campos tan diversos como la cosmética y la medicina regenerativa.</p>
+        </section>
+
+        <!-- ===== SECCIÓN 2 ===== -->
+        <section id="seccion-2">
+            <h2><span class="section-icon">🌿</span>Saber Ancestral y Práctica Tradicional en la Medicina Indígena Amazónica</h2>
+
+            <p>El uso del aceite-resina de copaiba en la Amazonía brasileña representa una de las pruebas más duraderas y extendidas del valor medicinal de una planta nativa, con una tradición de utilización que se remonta por lo menos a los pueblos indígenas antes de la llegada de los europeos. Las comunidades indígenas, como los Yanomami, han desarrollado un profundo conocimiento etnobotánico sobre los recursos forestales, utilizando plantas para tratar una vasta gama de dolencias. El aceite-resina de <em>Copaifera</em> ha sido un pilar en esta farmacopea tradicional, reconocido por sus potentes propiedades antiinflamatorias, curativas y antisépticas. Los usos documentados abarcan desde el tratamiento de heridas y úlceras cutáneas hasta el manejo de afecciones internas y enfermedades sistémicas. Este saber ancestral, transmitido oralmente a través de generaciones, ha validado empíricamente las propiedades de la resina mucho antes de que la ciencia moderna pudiera caracterizar sus mecanismos de acción.</p>
+
+            <p>Los informes etnobotánicos y etnográficos confirman que la resina de copaiba fue utilizada por los pueblos ribereños y otras comunidades amazónicas para la curación de heridas, la cicatrización de úlceras y la prevención de infecciones. Su aplicación directa sobre la piel era común para calmar la inflamación y promover la regeneración tisular. Además, su uso se extendía a afecciones específicas como la leishmaniasis, donde se empleaba para tratar las lesiones cutáneas asociadas. La resina también era valorada para el cuidado de la boca y los dientes; se utilizaba para controlar la sensibilidad dental después de procedimientos de blanqueamiento y para tratar lesiones orales, gracias a sus efectos antiinflamatorios y curativos. Incluso se ha documentado su uso en el tratamiento de la periodontitis, una enfermedad inflamatoria que afecta los tejidos que sostienen los dientes, con estudios recientes que apoyan la validez de esta práctica tradicional al demostrar que el aceite-resina puede reducir la pérdida de hueso alveolar inducida por esta condición en modelos animales. El conocimiento sobre estas aplicaciones ha sido sistematizado y, en algunos casos, publicado por las propias comunidades indígenas en colaboración con instituciones académicas, como en el caso de los Yanomami, cuyo manual de medicina tradicional ofrece una visión detallada de su repertorio de plantas medicinales.</p>
+
+            <p>La diseminación del conocimiento sobre el copaiba fuera de la Amazonía es un hito en la historia de la medicina global. A partir del siglo XVII, los agentes coloniales portugueses, notando el valor de este remedio indígena, lo introdujeron en el circuito comercial y médico europeo. El bálsamo de copaiba, como se le conoció entonces, fue llevado a Europa y se convirtió en un producto medicinal de lujo. Su popularidad creció exponencialmente en el siglo XIX, cuando fue adoptado por las farmacias de Estados Unidos y Europa para el tratamiento de diversas afecciones cutáneas crónicas como eczema, herpes e incluso gonorrea. A pesar de la falta de descripciones botánicas precisas por parte de los exploradores iniciales, la eficacia percibida del producto aseguró su demanda y éxito comercial. Este proceso de transferencia de conocimiento indígena a la medicina occidental es un testimonio de la solidez de la medicina tradicional amazónica y sentó las bases para la investigación científica posterior. La larga trayectoria de uso tradicional no solo valida su seguridad y eficacia preliminar, sino que también proporciona una guía invaluable para la selección de indicaciones terapéuticas en estudios clínicos modernos, actuando como una poderosa prueba de concepto milenaria que continúa inspirando la innovación en la industria farmacéutica y cosmética.</p>
+        </section>
+
+        <!-- ===== SECCIÓN 3 ===== -->
+        <section id="seccion-3">
+            <h2><span class="section-icon">✨</span>Integración en la Industria Cosmética Moderna</h2>
+
+            <p>En las últimas décadas, el aceite de copaiba ha experimentado una notable revalorización y se ha integrado de forma prominente en la industria cosmética y de cuidado personal, posicionándose como un ingrediente "limpio", natural y sostenible. Esta tendencia responde a una creciente demanda por parte de los consumidores de productos que no solo son efectivos, sino que también se alinean con principios de bienestar y respeto por el medio ambiente. Empresas emergentes en Brasil, como Terrain Brazilian Botanicals y Halo42, han construido sus narrativas de marca en torno a ingredientes auténticos provenientes de la selva amazónica, encapsulando la esencia de la naturaleza en botellas que prometen resultados de belleza basados en la sabiduría ancestral. Estas marcas utilizan aceite de copaiba en una variedad de productos, desde aceites faciales y lociones corporales hasta tratamientos para el baño, enfatizando sus propiedades calmantes y regeneradoras para la piel.</p>
+
+            <p>Las propiedades funcionales del aceite de copaiba lo convierten en un ingrediente muy deseable para las formulaciones cosméticas. Su principal atractivo radica en su potente perfil antiinflamatorio y calmante, lo que lo hace ideal para pieles sensibles, irritadas, atópicas o propensas a la rosácea. Al interactuar con los receptores CB2 del sistema endocannabinoide de la piel, el β-caryophylleno presente en el aceite puede modular la respuesta inflamatoria local, reduciendo rojeces y molestias. Además, su capacidad para promover la curación de heridas sin causar toxicidad sistémica o alteraciones hematológicas ha sido demostrada en estudios, lo que lo convierte en un candidato valioso para productos de after-sun, cicatrizantes y para la recuperación post-procedimiento estético. Su función como agente antiséptico, reconocida en la medicina tradicional, también encuentra eco en la cosmética moderna, donde se utiliza para ayudar a mantener la salud de la microbiota cutánea.</p>
+
+            <p>Desde una perspectiva regulatoria, el mercado cosmético en Brasil está bajo la supervisión de la Agencia Nacional de Vigilancia Sanitaria (Anvisa), que establece las normativas para la autorización y comercialización de productos. Bajo la Resolución de Directoría Colegiada (RDC) 7/2015, modificada por la RDC 259/2021, todos los cosméticos deben ser registrados y autorizados por Anvisa antes de su importación o venta. Para el etiquetado, la Agencia exige el uso obligatorio del Nomenclatura Internacional de Ingredientes Cosméticos (INCI), lo que garantiza la transparencia y la identificación clara de los componentes. En las etiquetas, el ingrediente suele listarse como <strong>Beta-Caryophyllene</strong>, su nombre INCI, y se describe funcionalmente como un agente perfumante y de condicionamiento de la piel. Recientemente, la RDC 907/2024 ha establecido nuevas directrices para el etiquetado de ingredientes, reflejando un continuo esfuerzo por mejorar la claridad para el consumidor. Un aspecto interesante del panorama brasileño es una ley reciente que exime a los productos de belleza artesanales de ciertas exigencias de registro ante Anvisa, lo que podría facilitar la entrada de nuevos emprendedores locales que buscan crear productos con ingredientes autóctonos. Este entorno regulatorio, junto con una creciente conciencia sobre la sostenibilidad, está impulsando a las empresas a adoptar prácticas de recolección responsables y a buscar certificaciones como la del Consejo de Administración Forestal (FSC), que abarca la gestión de productos no madereros de la selva.</p>
+        </section>
+
+        <!-- ===== SECCIÓN 4 ===== -->
+        <section id="seccion-4">
+            <h2><span class="section-icon">💊</span>Potencial Terapéutico: Evidencia Científica y Afirmaciones Comerciales</h2>
+
+            <p>La investigación científica contemporánea ha comenzado a validar muchos de los usos tradicionales del aceite-resina de copaíba, proporcionando una base molecular para sus propiedades terapéuticas. Sin embargo, es crucial distinguir entre la robusta evidencia preclínica, obtenida en estudios in vitro y en modelos animales, y la evidencia clínica limitada en humanos. Si bien la mayoría de los hallazgos son prometedores, persisten áreas donde las afirmaciones comerciales superan la evidencia científica rigurosa disponible en la actualidad.</p>
+
+            <p>La propiedad mejor documentada del aceite-resina es su potente actividad antiinflamatoria. Múltiples estudios han demostrado su capacidad para modular la respuesta inmune y reducir la inflamación. Por ejemplo, se ha observado que el aceite-resina de <em>Copaifera multijuga</em> es altamente eficaz en la inhibición de la producción de óxido nítrico (NO) y en la reducción de la pleuresía inducida por zimosa en modelos animales, superando a otros aceites de copaíba en potencia. Otro estudio sobre <em>C. reticulata</em> demostró que el aceite-resina modula positivamente el proceso inflamatorio tras una lesión, reduciendo el número de células inflamatorias después de siete días. Una meta-análisis sobre los efectos metabólicos del aceite de copaíba concluyó que es una alternativa efectiva para tratar enfermedades como la inflamación crónica. Adicionalmente, se ha demostrado que el β-caryophylleno, su principal componente, reduce la acumulación de triglicéridos intracelulares, lo que sugiere un posible efecto antiobesogénico. El mecanismo detrás de estas acciones reside en su capacidad para interactuar con los receptores CB2 del sistema endocannabinoide, una vía central en la regulación de la inflamación.</p>
+
+            <p>El aceite-resina también ha mostrado un notable potencial antimicrobiano, lo que respalda su uso tradicional como antiséptico. Estudios in vitro han confirmado su eficacia contra bacterias grampositivas como <em>Staphylococcus aureus</em> y hongos, haciéndolo candidato para aplicaciones en dermatología y odontología. En el ámbito de la odontología, un ensayo clínico aleatorizado evaluó un gel a base de aceite-resina de copaíba para el control de la sensibilidad dental y demostró ser efectivo. Investigaciones emergentes sugieren un potencial neuroprotector, ya que el tratamiento con aceite-resina ha demostrado preservar el tejido cerebral y reducir la infiltración de neutrófilos y la activación de microglía/macrófagos tras un traumatismo en la corteza motora de ratas. De manera similar, se ha encontrado evidencia pionera que apoya el uso tradicional en periodontitis, demostrando que el aceite-resina reduce la pérdida de hueso alveolar inducida por ligadura en modelos de ratas. Algunos estudios preliminares también han explorado sus propiedades antitumorales, aunque esta área requiere mucha más investigación para establecer su relevancia clínica.</p>
+
+            <p>A pesar de esta prometedora evidencia preclínica, existe una brecha crítica en la validación clínica humana. Fuentes académicas como Florida Atlantic University señalan que, si bien hay evidencia básica que apoya los mecanismos de beneficio, "hay evidencia insuficiente para juzgar si reduce el dolor" y que su potencial rol en el tratamiento de la artritis inflamatoria es "potencial pero no probado". Esto indica que muchas de las afirmaciones de marketing que vinculan el aceite de copaiba directamente con el alivio del dolor articular o de otras afecciones crónicas carecen de respaldo en ensayos clínicos rigurosos. El perfil de seguridad generalmente es favorable; múltiples estudios de toxicidad aguda han demostrado que el aceite-resina es seguro para uso tópico y oral, con bajo riesgo de irritación ocular o dermatológica en las dosis probadas. Sin embargo, la variabilidad química del producto significa que la calidad y concentración de los compuestos activos pueden diferir entre lotes, lo que complica la estandarización y la reproducibilidad de los resultados clínicos. En conclusión, mientras que la ciencia ha comenzado a descifrar el poder del aceite de copaiba, la transición de los laboratorios a las consultas médicas requiere una mayor inversión en ensayos clínicos aleatorizados y doble ciego en poblaciones humanas para confirmar su eficacia y establecer protocolos de uso seguros y efectivos.</p>
+        </section>
+
+        <!-- ===== SECCIÓN 5 ===== -->
+        <section id="seccion-5">
+            <h2><span class="section-icon">⚠️</span>Desafíos de Sostenibilidad, Variabilidad y Consideraciones Éticas</h2>
+
+            <p>La creciente popularidad del aceite de copaiba en mercados cosméticos y terapéuticos presenta una serie de desafíos complejos que van más allá de la pura investigación científica. Estos desafíos se centran en tres áreas interconectadas: la variabilidad química inherente al producto, la sostenibilidad de su extracción y las profundas consideraciones éticas relacionadas con la explotación de recursos genéticos y conocimientos tradicionales. Abordar estos problemas es fundamental para garantizar que el futuro del aceite de copaiba sea no solo exitoso, sino también responsable y equitativo.</p>
+
+            <p>Uno de los mayores obstáculos científicos y comerciales es la marcada variabilidad química del aceite-resina. Como se ha documentado, la composición de sesquiterpenos y diterpenos puede cambiar drásticamente dependiendo de factores como la especie de <em>Copaifera</em>, la latitud, la altitud y las condiciones climáticas locales. Esta heterogeneidad tiene implicaciones directas en la eficacia y la consistencia del producto final. Un lote de aceite-resina de una región específica puede tener un alto contenido de β-caryophylleno, mientras que otro de otra región puede estar dominado por otros compuestos, resultando en diferentes perfiles de actividad biológica. Esta inconsistencia dificulta la estandarización de productos, un requisito indispensable tanto para la regulación de la industria cosmética y farmacéutica como para la realización de estudios clínicos reproducibles. Sin un estándar químico claro, es difícil comparar los resultados de diferentes estudios y garantizar que un producto comercial cumpla con las promesas de su etiqueta. La investigación futura debe centrarse en caracterizar las diferentes "calidades" de aceite-resina y correlacionarlas con sus perfiles de actividad para permitir una selección más inteligente de materias primas.</p>
+
+            <p>Desde una perspectiva ecológica, la escalabilidad de la producción plantea un riesgo significativo para los bosques amazónicos. La recolección de la resina implica hacer incisiones en los troncos de los árboles de <em>Copaifera</em>, un proceso que, si no se gestiona adecuadamente, puede debilitar o incluso matar a los árboles a largo plazo. La creciente demanda global amenaza con llevar a la sobreexplotación de las poblaciones de estos árboles. Este riesgo se ve exacerbado por la crisis climática; las sequías recurrentes en la Amazonía, consecuencia del cambio climático, ya están demostrando reducir la producción de resina, ya que el agua es un recurso vital para la salud de las plantas. La implementación de prácticas de cosecha sostenible, como las promovidas por el Consejo de Administración Forestal (FSC), es crucial para proteger los ecosistemas forestales y asegurar la viabilidad a largo plazo de la cadena de suministro. La adopción de modelos de negocio que incentiven la conservación, como el pago por servicios ambientales o la certificación de productos de origen sostenible, será vital para equilibrar la demanda comercial con la salud del bosque.</p>
+
+            <p>Finalmente, el ascenso del aceite de copaiba en el mercado global levanta importantes cuestiones éticas sobre el comercio justo y la compensación de las comunidades indígenas. Estos pueblos han sido los custodios y transmisores de los conocimientos ancestrales sobre el uso de la resina durante miles de años. A menudo, sus contribuciones no reciben el reconocimiento ni la compensación económica que merecen. Existe un riesgo real de "despojo biológico", donde las corporaciones multinacionales obtienen ganancias sustanciales de un recurso generado por la biodiversidad local y el conocimiento tradicional, sin un retorno equitativo para las comunidades originarias. Para evitar esto, es imperativo que las empresas que comercializan productos de copaiba adopten modelos de negocio éticos que involucren a las comunidades locales, reconozcan sus derechos de propiedad intelectual colectiva y aseguren una participación justa en las ganancias. La colaboración con organizaciones indígenas, la firma de acuerdos de beneficio compartido y la promoción de cadenas de suministro transparentes no son solo una cuestión de responsabilidad social, sino un requisito fundamental para una explotación comercial sostenible y digna del legado cultural y natural del aceite de copaiba.</p>
+        </section>
+
+        <!-- ===== REFERENCIAS ===== -->
+        <section class="references" id="referencias">
+            <h2><span class="section-icon">📚</span>Referencias</h2>
+            <ol>
+                <li>Topical β-Caryophyllene for Dermatologic Disorders - PMC - NIH. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12655451/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC12655451/</a></li>
+                <li>Brazil encourages artisanal beauty market with relaxed ... <a href="https://www.personalcareinsights.com/news/brazil-artisanal-personal-care-anvisa.html" target="_blank" rel="noopener">https://www.personalcareinsights.com/...</a></li>
+                <li>Brazil's Anvisa clarifies new ingredients labelling rules for ... <a href="https://www.premiumbeautynews.com/en/brazil-s-anvisa-clarifies-new,18013" target="_blank" rel="noopener">https://www.premiumbeautynews.com/...</a></li>
+                <li>The sustainable journey of Copaíba Oil. <a href="https://www.clariant.com/en/Corporate/Blog/2025-Blog-Posts/09/Copaíba-story" target="_blank" rel="noopener">https://www.clariant.com/...</a></li>
+                <li>Cosmetic Product Registration Brazil: ANVISA Requirements. <a href="https://novatradebrasil.com/en/anvisa-regulatory-requirements/" target="_blank" rel="noopener">https://novatradebrasil.com/...</a></li>
+                <li>Brazil's Cosmetic & PCP Regulation. <a href="https://globalregulatorypartners.com/resource-center/regulatory-intelligence-platform/brazil-anvisa-regulatory-intelligence/brazil-cosmetics/" target="_blank" rel="noopener">https://globalregulatorypartners.com/...</a></li>
+                <li>Brazil Cosmetics Regulations & Registration Process. <a href="https://www.artixio.com/post/insights-cosmetic-regulations-in-brazil-anvisa" target="_blank" rel="noopener">https://www.artixio.com/...</a></li>
+                <li>Amazon Jungle Essential Oils grows Copaíba Oil deep in ... <a href="https://www.facebook.com/naturepackaged/videos/1070941928491682/" target="_blank" rel="noopener">https://www.facebook.com/...</a></li>
+                <li>Halo42 Skin & Wellness on Instagram. <a href="https://www.instagram.com/reel/DbeNWvjT1m7/" target="_blank" rel="noopener">https://www.instagram.com/...</a></li>
+                <li>Copaíba oil: a sustainable path for cosmetic innovations. <a href="https://www.industries-cosmetiques.fr/en/copaíba-oil-a-sustainable-path-for-cosmetic-innovations/" target="_blank" rel="noopener">https://www.industries-cosmetiques.fr/...</a></li>
+                <li>How a Cancer Diagnosis and Amazon Trip Led to a Clean ... <a href="https://mspmag.com/shop-and-style/terrain-brazilian-botanicals/" target="_blank" rel="noopener">https://mspmag.com/...</a></li>
+                <li>Chemical evaluation and in vitro cytotoxic activity of Copaifera ... <a href="http://www.scielo.br/scielo.php?script=sei_arttext&pid=S0044-59672025000101700" target="_blank" rel="noopener">http://www.scielo.br/...</a></li>
+                <li>Copaiba oleoresin presents anti-obesogenic effect and mitigates ... <a href="https://www.scielo.br/j/aa/a/Y7DxqtXnqrJFc8CqfigRXGr/?lang=en" target="_blank" rel="noopener">https://www.scielo.br/...</a></li>
+                <li>Antimicrobial potential of Copaiba Oil (Copaifera multijuga Hayne ... <a href="https://www.scielo.br/j/aabc/a/rqNzDqCFNMGYdhFRMvr7sqd/?lang=en" target="_blank" rel="noopener">https://www.scielo.br/...</a></li>
+                <li>Copaiba Oil and Its Constituent Copalic Acid as Chemotherapeutic ... <a href="https://www.scielo.br/j/jbchs/a/6qyqXbxqCMsfW63nhJc9Gsh/?lang=en" target="_blank" rel="noopener">https://www.scielo.br/...</a></li>
+                <li>Antimicrobial activity of copaiba (Copaifera langsdorffii) oleoresin on ... <a href="https://www.scielo.br/j/rbpm/a/7NGfBrRJ99dfq8rHtKcx3Kf/?lang=en" target="_blank" rel="noopener">https://www.scielo.br/...</a></li>
+                <li>[PDF] Copaiba oleoresin presents anti-obesogenic effect and mitigates ... <a href="https://www.scielo.br/j/aa/a/Y7DxqtXnqrJFc8CqfigRXGr/?format=pdf&lang=en" target="_blank" rel="noopener">https://www.scielo.br/...</a></li>
+                <li>Brazilian Amazon Traditional Medicine and the Treatment of Difficult ... <a href="https://pubmed.ncbi.nlm.nih.gov/28194218/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/28194218/</a></li>
+                <li>Antimicrobial Activity of Copaiba (Copaifera officinalis) and Pracaxi ... <a href="https://pubmed.ncbi.nlm.nih.gov/27125055/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/27125055/</a></li>
+                <li>Effects of natural antimicrobial compounds propolis and copaiba on ... <a href="https://pubmed.ncbi.nlm.nih.gov/38198959/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/38198959/</a></li>
+                <li>Safety and Effectiveness of Copaiba Oleoresin (C. reticulata Ducke ... <a href="https://pubmed.ncbi.nlm.nih.gov/32443593/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/32443593/</a></li>
+                <li>Effect of copaiba oil-resin on dental sensitivity control and color ... <a href="https://pubmed.ncbi.nlm.nih.gov/40358772/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/40358772/</a></li>
+                <li>Copaiba oil-resin (Copaifera reticulata Ducke) modulates ... - PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/28615025/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/28615025/</a></li>
+                <li>Allergic Dermatitis in Pêga Breed Donkeys (Equus asinus) Caused ... <a href="https://pubmed.ncbi.nlm.nih.gov/38731338/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/38731338/</a></li>
+                <li>Brazilian Amazon Traditional Medicine and the Treatment of Difficult ... <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5282428/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC5282428/</a></li>
+                <li>Natural resources used in the traditional medicine of the Marinau ... <a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1443360/full" target="_blank" rel="noopener">https://www.frontiersin.org/...</a></li>
+                <li>Ethnobotanical study of medicinal plants used by Ribeirinhos in the ... <a href="https://www.sciencedirect.com/science/article/pii/S0378874116321973" target="_blank" rel="noopener">https://www.sciencedirect.com/...</a></li>
+                <li>Ethnobotanical Practices Among Riverine People in the Brazilian ... <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4158303" target="_blank" rel="noopener">https://papers.ssrn.com/...</a></li>
+                <li>Copaifera Reticulata: Chemical Characterization and ... <a href="https://www.researchgate.net/publication/340738768" target="_blank" rel="noopener">https://www.researchgate.net/...</a></li>
+                <li>Chemical Variation in the Volatiles of Copaifera reticulata ... <a href="https://www.researchgate.net/publication/232885228" target="_blank" rel="noopener">https://www.researchgate.net/...</a></li>
+                <li>Qualitative and quantitative composition of volatile ... <a href="https://www.researchgate.net/figure/Qualitative-and-quantitative-composition-of-volatile-compounds-from-Copaifera-reticulata_tbl1_356956952" target="_blank" rel="noopener">https://www.researchgate.net/...</a></li>
+                <li>Chemical Variability of Copaifera reticulata Ducke Oleoresin. <a href="https://www.researchgate.net/profile/Cristina-Herrero-Jauregui/publication/51039412" target="_blank" rel="noopener">https://www.researchgate.net/...</a></li>
+                <li>Anti-Inflammatory Potential of the Oleoresin from the ... <a href="https://www.researchgate.net/publication/356956952" target="_blank" rel="noopener">https://www.researchgate.net/...</a></li>
+                <li>Chemical Variability of Copaifera reticulata DUCKE Oleoresin. <a href="https://www.researchgate.net/publication/51039412" target="_blank" rel="noopener">https://www.researchgate.net/...</a></li>
+                <li>Personal Hygiene Products, Cosmetics and Fragrances - Portal Gov.br. <a href="https://www.gov.br/anvisa/en/regulation-of-products/personal-hygiene-products-cosmetics-and-fragrances" target="_blank" rel="noopener">https://www.gov.br/anvisa/...</a></li>
+                <li>Safety and Effectiveness of Copaiba Oleoresin (C. reticulata Ducke ... <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7278981/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC7278981/</a></li>
+                <li>Evaluation of the biological activities of Copaiba (Copaifera spp). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10502340/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC10502340/</a></li>
+                <li>Anti-inflammatory and wound healing effect of Copaiba oleoresin on ... <a href="https://linkinghub.elsevier.com/retrieve/pii/S240584402200281X" target="_blank" rel="noopener">https://linkinghub.elsevier.com/...</a></li>
+                <li>Copaiba oil-resin (Copaifera reticulata Ducke) modulates the ... - PMC. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5471965/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC5471965/</a></li>
+                <li>Aloe vera and copaiba oleoresin-loaded chitosan films for wound ... <a href="https://linkinghub.elsevier.com/retrieve/pii/S0378517323000686" target="_blank" rel="noopener">https://linkinghub.elsevier.com/...</a></li>
+                <li>[PDF] Topic application of copaiba oil promotes wound healing without ... <a href="https://rsdjournal.org/rsd/article/download/49288/38574/503848" target="_blank" rel="noopener">https://rsdjournal.org/...</a></li>
+                <li>Evaluation of the biological activities of Copaiba (Copaifera spp). <a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2023.1215437/full" target="_blank" rel="noopener">https://www.frontiersin.org/...</a></li>
+                <li>Copaiba: Silver Bullet or Snake Oil? - Florida Atlantic University. <a href="https://www.fau.edu/newsdesk/articles/copaiba-oil.php" target="_blank" rel="noopener">https://www.fau.edu/newsdesk/...</a></li>
+                <li>Treatments for Inflammatory Arthritis: Potential But Unproven Role of ... <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6413642/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC6413642/</a></li>
+                <li>Anti-inflammatory and wound healing effect of Copaiba oleoresin on ... <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8873535/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC8873535/</a></li>
+                <li>Copaiba Oil: A Research-Backed Look at One of Nature's Most ... <a href="https://nicoleapelian.com/blog/copaiba-oil-a-research-backed-look-at-one-of-natures-most-remarkable-remedies/" target="_blank" rel="noopener">https://nicoleapelian.com/...</a></li>
+                <li>Meta-analysis on Copaiba Oil: Its Functions in Metabolism and Its ... <a href="https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-0038-1669390" target="_blank" rel="noopener">https://www.thieme-connect.com/...</a></li>
+                <li>Copaiba Oil: A Powerful Anti-Inflammatory, Antiseptic & Expectorant. <a href="https://draxe.com/essential-oils/copaiba-oil/" target="_blank" rel="noopener">https://draxe.com/...</a></li>
+                <li>Occurrence, chemical composition, biological activities and ... <a href="https://www.sciencedirect.com/science/article/pii/S0753332218348546" target="_blank" rel="noopener">https://www.sciencedirect.com/...</a></li>
+                <li>[PDF] Chemical variability of the volatiles of Copaifera langsdorffii growing ... <a href="https://repositorio.ufra.edu.br/jspui/bitstream/123456789/486/1/" target="_blank" rel="noopener">https://repositorio.ufra.edu.br/...</a></li>
+                <li>Occurrence, chemical composition, biological activities and ... <a href="https://www.researchgate.net/publication/328723394" target="_blank" rel="noopener">https://www.researchgate.net/...</a></li>
+                <li>Development of a Gas Chromatography Method for the Analysis of ... <a href="https://www.researchgate.net/publication/320235203" target="_blank" rel="noopener">https://www.researchgate.net/...</a></li>
+                <li>(PDF) Evaluation of the biological activities of Copaiba (Copaifera spp). <a href="https://www.researchgate.net/publication/373608949" target="_blank" rel="noopener">https://www.researchgate.net/...</a></li>
+                <li>Chemical composition and anti-inflammatory activity of copaiba oils ... <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378874107001286" target="_blank" rel="noopener">https://www.sciencedirect.com/...</a></li>
+                <li>Chemistry, Biological Activities, and Uses of Copaiba Oil Resins. <a href="https://link.springer.com/rwe/10.1007/978-3-030-76523-1_19-1" target="_blank" rel="noopener">https://link.springer.com/...</a></li>
+                <li>Chemical composition and anti-inflammatory activity of copaiba oils ... <a href="https://www.researchgate.net/publication/6382833" target="_blank" rel="noopener">https://www.researchgate.net/...</a></li>
+                <li>Chemical composition and anti-inflammatory activity of copaiba oils ... <a href="https://pubmed.ncbi.nlm.nih.gov/17446019/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/17446019/</a></li>
+                <li>Copaiba, an Aromatic Treasure From Brazil - Florihana. <a href="https://www.florihana.com/en/blog/copaiba-an-aromatic-treasure-from-brazil-n58" target="_blank" rel="noopener">https://www.florihana.com/...</a></li>
+                <li>Copaiba Essential Oil: The Amazonian Elixir | MAKASA. <a href="https://makasa.org/en/article/eterichno-maslo-ot-kopajba/" target="_blank" rel="noopener">https://makasa.org/...</a></li>
+                <li>Minireview about Medicinal Copaiba Oil in the Treatment of Skin ... <a href="https://www.dermatoljournal.com/articles/minireview-about-medicinal-copaiba-oil-in-the-treatment-of-skin-diseases.html" target="_blank" rel="noopener">https://www.dermatoljournal.com/...</a></li>
+                <li>Caracterização físico-química dos óleos-resinas de copaifera ... <a href="https://repositorio.bc.ufg.br/tede/items/1fee1d40-9d30-4712-a14c-468efedd8f97" target="_blank" rel="noopener">https://repositorio.bc.ufg.br/...</a></li>
+                <li>Toxicological Effects of Copaiba Oil (Copaifera spp.) and Its Active ... <a href="https://www.mdpi.com/2223-7747/12/5/1054" target="_blank" rel="noopener">https://www.mdpi.com/2223-7747/12/5/1054</a></li>
+                <li>Copaiba tree, copaifera langsdorffii, in Brazil. <a href="https://www.facebook.com/groups/uniquetrees/posts/1797723614198635/" target="_blank" rel="noopener">https://www.facebook.com/...</a></li>
+                <li>History of Copaiba | Young Living Essential Oils. <a href="https://www.youngliving.com/en_eu/discover/history-of-essential-oils/history-of-copaiba" target="_blank" rel="noopener">https://www.youngliving.com/...</a></li>
+                <li>healing oil by early explorers in Brazil. <a href="https://scholarlypublications.universiteitleiden.nl/access/item%3A3566601/view" target="_blank" rel="noopener">https://scholarlypublications.universiteitleiden.nl/...</a></li>
+                <li>Copaiba balsam - MFA Cameo. <a href="https://cameo.mfa.org/wiki/Copaiba_balsam" target="_blank" rel="noopener">https://cameo.mfa.org/wiki/Copaiba_balsam</a></li>
+                <li>6 Global Cross-Cultural Dissemination of Indigenous Medical ... <a href="https://www.mprl-series.mpg.de/proceedings/10/8/index.html" target="_blank" rel="noopener">https://www.mprl-series.mpg.de/...</a></li>
+                <li>Copaiba Skincare & Bath Rituals for Face and Body | HALO42 ... <a href="https://halo42.com/" target="_blank" rel="noopener">https://halo42.com/</a></li>
+                <li>TERRAIN BRAZILIAN BOTANICALS. <a href="https://www.terrainbrazil.com/" target="_blank" rel="noopener">https://www.terrainbrazil.com/</a></li>
+                <li>Terrain Brazilian Botanicals Draws Inspiration From Nature. <a href="https://maplegrovemag.com/terrain-brazilian-botanicals-draws-inspiration-from-nature/" target="_blank" rel="noopener">https://maplegrovemag.com/...</a></li>
+                <li>Summer is officially here However you're soaking up the ... <a href="https://www.instagram.com/p/DLIs8tpN-vq/" target="_blank" rel="noopener">https://www.instagram.com/...</a></li>
+                <li>COPAIFERA OFFICINALIS RESIN: INCI Ingredient - SpecialChem. <a href="https://www.specialchem.com/cosmetics/inci-ingredients/copaifera-officinalis-resin" target="_blank" rel="noopener">https://www.specialchem.com/...</a></li>
+                <li>Ingredient: BETA-CARYOPHYLLENE - European Commission. <a href="https://ec.europa.eu/growth/tools-databases/cosing/details/54743" target="_blank" rel="noopener">https://ec.europa.eu/...</a></li>
+                <li>Chemical Characterization and Quality Assessment of Copaiba Oil ... <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10144763/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC10144763/</a></li>
+                <li>Some Information About Copaiba Balsam - Kaapi Ingredients. <a href="https://kaapiingredients.com/articles-essential-oils/copaiba-information/" target="_blank" rel="noopener">https://kaapiingredients.com/...</a></li>
+                <li>Copaiba, an Aromatic Treasure From Brazil - Florihana. <a href="https://www.florihana.com/en/blog/copaiba-an-aromatic-treasure-from-brazil-n58" target="_blank" rel="noopener">https://www.florihana.com/...</a></li>
+                <li>Antimicrobial efficacy of alternative root canal disinfection strategies. <a href="https://linkinghub.elsevier.com/retrieve/pii/S0753332225000277" target="_blank" rel="noopener">https://linkinghub.elsevier.com/...</a></li>
+                <li>The use of medicinal plants by the Yanomami Indians of Brazil. <a href="https://www.semanticscholar.org/paper/ba0a9cb7c9d5fab41a98064253b2540c45e32961" target="_blank" rel="noopener">https://www.semanticscholar.org/...</a></li>
+                <li>Medicinal knowledge in the Amazon - Kew Gardens. <a href="https://www.kew.org/read-and-watch/medicinal-knowledge-amazong" target="_blank" rel="noopener">https://www.kew.org/...</a></li>
+                <li>Manual of Yanomami traditional medicine - Google Arts & Culture. <a href="https://artsandculture.google.com/story/manual-of-yanomami-traditional-medicine-institutosocioambiental-isa/JAXRKSOfv6hOJA" target="_blank" rel="noopener">https://artsandculture.google.com/...</a></li>
+                <li>The traditional Yanomami medicine is now available to the world. <a href="https://medium.com/social-environmental-stories/the-traditional-yanomami-medicine-is-now-available-to-the-world-21d4c5ad0705" target="_blank" rel="noopener">https://medium.com/...</a></li>
+                <li>Copaifera of the Neotropics: A Review of the Phytochemistry and ... <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5983702/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC5983702/</a></li>
+                <li>Oleo resina de Copaiba (Copaifera officinalis) - EN - Amazon Oil. <a href="https://amazonoil.com.br/rainforest-products/copaibaoilresin-en/" target="_blank" rel="noopener">https://amazonoil.com.br/...</a></li>
+                <li>Copaene - an overview | ScienceDirect Topics. <a href="https://www.sciencedirect.com/topics/medicine-and-dentistry/copaene" target="_blank" rel="noopener">https://www.sciencedirect.com/...</a></li>
+                <li>copaiba resin, 9000-12-8 - The Good Scents Company. <a href="https://www.thegoodscentcompany.com/data/rs1391291.html" target="_blank" rel="noopener">https://www.thegoodscentcompany.com/...</a></li>
+                <li>Copaiba: The Resinous Wonder of the Amazon Rainforest. <a href="https://essentialcandy.com/blogs/news/copaiba-resin-history-benefits" target="_blank" rel="noopener">https://essentialcandy.com/...</a></li>
+                <li>Mother nature's medicine chest | Biomedical Scientist. <a href="https://thebiomedicalscientist.net/2026/01/23/mother-natures-medicine-chest" target="_blank" rel="noopener">https://thebiomedicalscientist.net/...</a></li>
+                <li>Bioactive metabolites and antibacterial activity of Copaifera species. <a href="https://link.springer.com/article/10.1007/s11101-026-10288-w" target="_blank" rel="noopener">https://link.springer.com/...</a></li>
+                <li>Copaifera - an overview | ScienceDirect Topics. <a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/copaifera" target="_blank" rel="noopener">https://www.sciencedirect.com/...</a></li>
+                <li>From the heart of the Amazon - FL Restoration. <a href="https://www.forestlandscaperestoration.org/news/from-the-heart-of-the-amazon/" target="_blank" rel="noopener">https://www.forestlandscaperestoration.org/...</a></li>
+                <li>Deep within Brazil's southern Amazon, a remarkable demonstration ... <a href="https://www.instagram.com/reel/DaRipDNiies/" target="_blank" rel="noopener">https://www.instagram.com/...</a></li>
+                <li>Challenges In Copaiba Production Facing Droughts In The Amazon. <a href="https://kaapiiingredients.com/blog/challenges-in-copaiba-production-facing-droughts-in-the-amazon/" target="_blank" rel="noopener">https://kaapiiingredients.com/...</a></li>
+                <li>Study confirms antitumor properties of copaiba oleoresin. <a href="https://jornal.unicamp.br/en/edicao/727/estudo-atesta-propriedades-antitumorais-de-oleorresina-de-copaiba/" target="_blank" rel="noopener">https://jornal.unicamp.br/...</a></li>
+                <li>Chemical Composition of Copaifera reticulata Oleoresin from the ... <a href="https://www.researchgate.net/figure/Chemical-Composition-of-Copaifera-reticulata-Oleoresin-from-the-First-Extraction-For_tbl1_51039412" target="_blank" rel="noopener">https://www.researchgate.net/...</a></li>
+                <li>(PDF) Avaliação da composição química de um óleo de copaiba ... <a href="https://www.researchgate.net/publication/363550741" target="_blank" rel="noopener">https://www.researchgate.net/...</a></li>
+                <li>Biological Activity of Copaiba in Damage to the Alveolar Bone in a ... <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9572349/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC9572349/</a></li>
+                <li>Copaiba Oil-Resin Treatment Is Neuroprotective and Reduces ... <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3291111/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC3291111/</a></li>
+                <li>Copaiba Oil-Resin Reduces the Alveolar Bone Damage Triggered ... <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12884250/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC12884250/</a></li>
+            </ol>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logotipo Emprendimiento Avigail Avila">
+                    <defs>
+                        <linearGradient id="goldGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#e9b872;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#c98a4b;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <g fill="none" stroke="url(#goldGradFooter)" stroke-width="3" stroke-linecap="round">
+                        <polygon points="100,15 185,175 15,175"/>
+                        <path d="M 100 40 L 165 160 L 35 160 Z" />
+                        <path d="M 100 60 L 148 148 L 52 148 Z" />
+                        <path d="M 100 80 L 132 138 L 68 138 Z" />
+                        <path d="M 100 98 L 118 128 L 82 128 Z" />
+                        <path d="M 100 112 L 108 122 L 92 122 Z" />
+                        <line x1="100" y1="15" x2="100" y2="175" opacity="0.6"/>
+                        <line x1="100" y1="15" x2="15" y2="175" opacity="0.6"/>
+                        <line x1="100" y1="15" x2="185" y2="175" opacity="0.6"/>
+                    </g>
+                    <circle cx="100" cy="118" r="3" fill="#e9b872"/>
+                </svg>
+                <div class="footer-brand">Emprendimiento Avigail Avila</div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <p><strong>De la Selva al Laboratorio</strong> · El Aceite de Copaiba entre la Medicina Tradicional Indígena y la Ciencia Moderna</p>
+            <p style="font-size: 0.85rem;">Coautoría: <strong>Ing. Avigail Avila B.</strong> — Investigador-Promotor-Divulgador Científico · Analista de IA Aplicada</p>
+        </div>
+    </footer>
+
+</div>
+
+<!-- ==================== SCRIPTS ==================== -->
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
